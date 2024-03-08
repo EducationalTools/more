@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+  padding: 10px;
+  background: #111;
+  border-radius: 1000px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  /* a black glow */
+  box-shadow: 0 0 50px 0 #000;
+  gap: 5px;
+}
+
+.menu > .icnbtn {
+  width: 50px;
+  height: 50px;
+  background-color: #222;
+  border-radius: 10px;
+  transition-duration: 200ms;
+  transform: scale(1);
+  margin: 0px;
+  transition-timing-function: ease-out;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu > .icnbtn:hover {
+  background-color: #333;
+}
+
+.menu > .icnbtn:active {
+  border-radius: 25px !important;
+  background-color: #333;
+}
+
+.menu > .icnbtn:first-child {
+  border-radius: 25px 25px 10px 10px;
+}
+.menu > .icnbtn:last-child {
+  border-radius: 10px 10px 25px 25px;
+}
