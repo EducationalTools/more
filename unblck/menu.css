@@ -1,4 +1,4 @@
-.menu {
+.sidebar {
   position: fixed;
   top: 50%;
   transform: translate(0, -50%);
@@ -13,7 +13,7 @@
   gap: 5px;
 }
 
-.menu > .icnbtn {
+.sidebar > .icnbtn {
   width: 50px;
   height: 50px;
   background-color: #222;
@@ -28,26 +28,26 @@
   align-items: center;
 }
 
-.menu > .icnbtn:hover {
+.sidebar > .icnbtn:hover {
   background-color: #333;
 }
 
-.menu > .icnbtn:active {
+.sidebar > .icnbtn:active {
   border-radius: 25px !important;
   background-color: #333;
 }
 
-.menu > .icnbtn:first-child {
+.sidebar > .icnbtn:first-child {
   border-radius: 25px 25px 10px 10px;
 }
-.menu > .icnbtn:last-child {
+.sidebar > .icnbtn:last-child {
   border-radius: 10px 10px 25px 25px;
 }
 
-.menu > .icnbtn.home {
+.sidebar > .icnbtn.home {
   overflow: hidden;
 }
-.menu > .icnbtn.home:before {
+.sidebar > .icnbtn.home:before {
   background-image: url(icon-512-maskable.png);
   background-size: cover;
   z-index: -1;
@@ -58,7 +58,7 @@
   height: 100%;
   transition-duration: 200ms;
 }
-.menu > .icnbtn.home:hover:before {
+.sidebar > .icnbtn.home:hover:before {
   background-image: url(icon-512-maskable.png);
   background-size: cover;
   z-index: -1;
@@ -69,13 +69,13 @@
   height: 100%;
 }
 
-.menu > .icnbtn.home > span {
+.sidebar > .icnbtn.home > span {
   opacity: 0;
   transition-duration: 200ms;
   transform: translateY(30px);
 }
 
-.menu > .icnbtn.home:hover > span {
+.sidebar > .icnbtn.home:hover > span {
   opacity: 1;
   transform: translateY(0px);
 }
