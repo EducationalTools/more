@@ -6,6 +6,26 @@ function menu(menuName) {
     header.innerHTML = "Gmaes";
     document.querySelector(".menucontainer > .menu").appendChild(header);
   }
+  if (menuName == "app") {
+    header = document.createElement("h1");
+    header.innerHTML = "Apps";
+    document.querySelector(".menucontainer > .menu").appendChild(header);
+  }
+  if (menuName == "tool") {
+    header = document.createElement("h1");
+    header.innerHTML = "Tools";
+    document.querySelector(".menucontainer > .menu").appendChild(header);
+  }
+  if (menuName == "more") {
+    header = document.createElement("h1");
+    header.innerHTML = "More";
+    document.querySelector(".menucontainer > .menu").appendChild(header);
+  }
+  if (menuName == "new") {
+    header = document.createElement("h1");
+    header.innerHTML = "Skill";
+    document.querySelector(".menucontainer > .menu").appendChild(header);
+  }
   //   document.querySelector(".menu").innerHTML = menu[menuName];
 }
 
