@@ -1,5 +1,4 @@
 if (location == "https://EducationalTools.github.io/more/u") {
-  // remove home
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
 
