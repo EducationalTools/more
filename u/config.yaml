@@ -1,0 +1,4 @@
+games:
+  - name: "Test"
+    description: "Test"
+    url: "Test"
