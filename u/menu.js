@@ -1,4 +1,4 @@
-if (location == "https://EducationalTools.github.io/more/u") {
+if (location.href.includes("EducationalTools.github.io/more/u")) {
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
 
