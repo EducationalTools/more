@@ -1,4 +1,4 @@
-if (location.href.includes("EducationalTools.github.io/more/u")) {
+if (location.href.toLowerCase().includes("educationaltools.github.io/more/u")) {
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
 
