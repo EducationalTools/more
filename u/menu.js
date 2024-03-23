@@ -1,7 +1,8 @@
-if ((location = "https://EducationalTools.github.io/more/u")) {
+if (location == "https://EducationalTools.github.io/more/u") {
   // remove home
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
+
 function menu(menuName) {
   document.querySelector(".menucontainer").classList.remove("hide");
   document.querySelector(".menucontainer > .menu").innerHTML = "";
