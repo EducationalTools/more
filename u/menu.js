@@ -27,11 +27,6 @@ function menu(menuName) {
     header.innerHTML = "More";
     document.querySelector(".menucontainer > .menu").appendChild(header);
   }
-  if (menuName == "new") {
-    header = document.createElement("h1");
-    header.innerHTML = "Skill";
-    document.querySelector(".menucontainer > .menu").appendChild(header);
-  }
   //   document.querySelector(".menu").innerHTML = menu[menuName];
 }
 
