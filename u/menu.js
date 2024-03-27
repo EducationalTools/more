@@ -4,6 +4,12 @@ if (
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
 
+fetch("config.yaml").then(function (response) {
+  response.text().then(function (text) {
+    document.config = jsyaml.load(text)
+  })
+})
+
 function menu(menuName) {
   document.querySelector(".menucontainer").classList.remove("hide");
   document.querySelector(".menucontainer > .menu").innerHTML = "";
@@ -11,6 +17,13 @@ function menu(menuName) {
     header = document.createElement("h1");
     header.innerHTML = "Gmaes";
     document.querySelector(".menucontainer > .menu").appendChild(header);
+    document.config.games.forEach(game => {
+      menuitm = document.createElement("a");
+      menuitm.classList.add("menuitm");
+      menuitm.href = game.repo;
+      menuitm.innerHTML = game.name;
+      document.querySelector(".menucontainer > .menu").appendChild(menuitm);
+    });
   }
   if (menuName == "app") {
     header = document.createElement("h1");
