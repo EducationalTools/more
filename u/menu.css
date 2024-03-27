@@ -105,10 +105,21 @@
   border-radius: 0 30px 30px 0;
   z-index: 30;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
 }
 
 .menu>h1 {
-  padding: 10px;
   margin: 0;
   color: white;
+}
+
+.menu>.menuitm {
+  padding: 15px;
+  background-color: #222;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
 }
