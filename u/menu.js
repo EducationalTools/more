@@ -4,6 +4,12 @@ if (
   document.querySelector(".sidebar > .icnbtn.home").remove();
 }
 
+fetch("config.yaml").then(function (response) {
+  response.text().then(function (text) {
+    document.config = jsyaml.load(text)
+  })
+})
+
 function menu(menuName) {
   document.querySelector(".menucontainer").classList.remove("hide");
   document.querySelector(".menucontainer > .menu").innerHTML = "";
