@@ -13,7 +13,7 @@
   gap: 5px;
 }
 
-.sidebar > .icnbtn {
+.sidebar>.icnbtn {
   width: 50px;
   height: 50px;
   background-color: #222;
@@ -28,26 +28,28 @@
   align-items: center;
 }
 
-.sidebar > .icnbtn:hover {
+.sidebar>.icnbtn:hover {
   background-color: #333;
 }
 
-.sidebar > .icnbtn:active {
+.sidebar>.icnbtn:active {
   border-radius: 25px !important;
   background-color: #333;
 }
 
-.sidebar > .icnbtn:first-child {
+.sidebar>.icnbtn:first-child {
   border-radius: 25px 25px 10px 10px;
 }
-.sidebar > .icnbtn:last-child {
+
+.sidebar>.icnbtn:last-child {
   border-radius: 10px 10px 25px 25px;
 }
 
-.sidebar > .icnbtn.home {
+.sidebar>.icnbtn.home {
   overflow: hidden;
 }
-.sidebar > .icnbtn.home:before {
+
+.sidebar>.icnbtn.home:before {
   background-image: url(icon-512-maskable.png);
   background-size: cover;
   z-index: -1;
@@ -58,7 +60,8 @@
   height: 100%;
   transition-duration: 200ms;
 }
-.sidebar > .icnbtn.home:hover:before {
+
+.sidebar>.icnbtn.home:hover:before {
   background-image: url(icon-512-maskable.png);
   background-size: cover;
   z-index: -1;
@@ -69,13 +72,13 @@
   height: 100%;
 }
 
-.sidebar > .icnbtn.home > span {
+.sidebar>.icnbtn.home>span {
   opacity: 0;
   transition-duration: 200ms;
   transform: translateY(30px);
 }
 
-.sidebar > .icnbtn.home:hover > span {
+.sidebar>.icnbtn.home:hover>span {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -101,9 +104,10 @@
   background-color: #111;
   border-radius: 0 30px 30px 0;
   z-index: 30;
+  overflow: hidden;
 }
 
-.menu > h1 {
+.menu>h1 {
   padding: 10px;
   margin: 0;
   color: white;
