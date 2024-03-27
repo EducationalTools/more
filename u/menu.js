@@ -7,6 +7,7 @@ if (
 fetch("config.yaml").then(function (response) {
   response.text().then(function (text) {
     document.config = jsyaml.load(text)
+    document.querySelector(".loader").classList.add("hide");
   })
 })
 
