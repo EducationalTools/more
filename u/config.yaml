@@ -1,4 +1,5 @@
 games:
   - name: "Test"
     description: "Test"
-    url: "Test"
+    repo: "g-1"
+    path: "test/index.html"
