@@ -5,13 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="../menu.css" />
     <link rel="icon" href="icon-512.png" sizes="any" />
 
     <title>EduTools</title>
 </head>
 
 <body>
+    <div class="menucontainer hide" onclick="closeMenu()">
+        <div class="menu"></div>
+    </div>
+    <script>!function (w, d, i, s) { function l() { if (!d.getElementById(i)) { var f = d.getElementsByTagName(s)[0], e = d.createElement(s); e.type = "text/javascript", e.async = !0, e.src = "https://canny.io/sdk.js", f.parentNode.insertBefore(e, f) } } if ("function" != typeof w.Canny) { var c = function () { c.q.push(arguments) }; c.q = [], w.Canny = c, "complete" === d.readyState ? l() : w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } }(window, document, "canny-jssdk", "script");</script>
+
+    <div class="sidebar">
+        <div class="icnbtn home" onclick="location ='https://EducationalTools.github.io/more/u'">
+            <span class="material-symbols-rounded"> home </span>
+        </div>
+        <div class="icnbtn" onclick="menu('gmae')">
+            <span class="material-symbols-rounded"> sports_esports </span>
+        </div>
+        <div class="icnbtn" onclick="menu('app')">
+            <span class="material-symbols-rounded"> apps </span>
+        </div>
+        <div class="icnbtn" onclick="menu('tool')">
+            <span class="material-symbols-rounded"> build </span>
+        </div>
+        <div class="icnbtn" onclick="window.open('https://inglan2.github.io/SchoolDocs')">
+            <span class="material-symbols-rounded"> library_books </span>
+        </div>
+        <div class="icnbtn" data-canny-changelog>
+            <span class="material-symbols-rounded"> notifications </span>
+        </div>
+        <div class="icnbtn" onclick="menu('more')">
+            <span class="material-symbols-rounded"> more_vert </span>
+        </div>
+    </div>
+    <script>
+        Canny('initChangelog', {
+            appID: '65eae5dcdc0b7bc8257a4736',
+            position: 'top',
+            align: 'left',
+            theme: 'dark',
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
