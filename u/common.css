@@ -8,6 +8,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.flexgrow {
+  flex-grow: 1;
+}
+
 h1 {
   font-weight: 100;
 }
